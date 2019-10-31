@@ -1,0 +1,6 @@
+sCC = gcc
+LIBS = -lwiringPi
+blink: blink.o
+	$(CC) blink.o -o blink.c $(LIBS)
+clean:
+	-rm -f *.o
